@@ -419,6 +419,20 @@
               <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
             </svg>
           </button>
+          <form class="form" action="">
+            <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+
+            <label class="modal__lable" for="input_name"> Ім'я </label>
+              <input type="text" name="name" id="input_name" class="input modal-input" required>
+            <label class="modal__lable" for="input_tel">Телефон</label>
+              <input type="tel" name="phone" id="input_tel" class="input modal-input" required>
+            <label class="modal__lable" for="input_mail">Пошта</label>
+              <input type="email" name="email" id="input_mail" class="input modal-input" required>
+            <label class="modal__lable" for="input_message">Коментар</label>  
+            <textarea name="message" id="input_message" class="input modal-input textarea" placeholder="Введіть текст"></textarea>           
+
+            <button type="submit" class="modal__btn_">Відправити</button>
+          </form>
         </div>
       </div>
     </div>
