@@ -423,13 +423,44 @@
             <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
 
             <label class="modal__lable" for="input_name"> Ім'я </label>
-              <input type="text" name="name" id="input_name" class="input modal-input" required>
+              <div class="input__wraper">
+                <input type="text" name="name" id="input_name" class="input modal-input field" required>
+                <svg class="input_icon" width="12px" height="12px">
+                  <use href="./img/symbol-defs.svg#icon-name-1"></use>
+                </svg>
+              </div>
             <label class="modal__lable" for="input_tel">Телефон</label>
-              <input type="tel" name="phone" id="input_tel" class="input modal-input" required>
+            <div class="input__wraper">
+              <input type="tel" name="phone" id="input_tel" class="input modal-input field" required>
+              <svg class="input_icon" width="13px" height="13px">
+                <use href="./img/symbol-defs.svg#icon-tel-1"></use>
+              </svg>
+            </div>
             <label class="modal__lable" for="input_mail">Пошта</label>
-              <input type="email" name="email" id="input_mail" class="input modal-input" required>
+            <div class="input__wraper">
+              <input type="email" name="email" id="input_mail" class="input modal-input field" required>
+              <svg class="input_icon" width="15px" height="12px">
+                <use href="./img/symbol-defs.svg#icon-mail-1"></use>
+              </svg>
+            </div>
             <label class="modal__lable" for="input_message">Коментар</label>  
-            <textarea name="message" id="input_message" class="input modal-input textarea" placeholder="Введіть текст"></textarea>           
+            <textarea name="message" id="input_message" class="input modal-input textarea" placeholder="Введіть текст"></textarea>    
+            
+            <label class="check__lable">
+              <input type="checkbox" name="check" class="input__check">
+            <span class="check__wrap">
+              <svg class="check-icon-off" width="16px" height="15px">
+                <use href="./img/symbol-defs.svg#icon-Vector-1"></use>
+              </svg> 
+              <svg class="check-icon-on" width="16px" height="15px">
+                <use href="./img/symbol-defs.svg#icon-icon-check"></use>
+              </svg>
+            </span>
+            
+                Погоджуюся з розсилкою та приймаю 
+                 <a class="check__link" href="#" target="_blank">
+                  Умови договору</a>
+            </label>
 
             <button type="submit" class="modal__btn_">Відправити</button>
           </form>
